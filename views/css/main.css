@@ -47,12 +47,13 @@ body {
 }
 
 .logo_text{
-	font-size: 35px;
+	font-size: 40px;
 	font-family: cursive;
+    color: #ffffff;
 }
 
 .navbar-custom {
-    background-color: purple;
+    background-color: gray;
     color:#ffffff;
     border-radius:0;
 }
