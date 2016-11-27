@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sample Site</title>
+<html>
+  <head>
+    
+      <title>Naziv</title>
+      <link rel="stylesheet" type="text/css" href="./css/main.css">
+      <link rel="stylesheet" type="text/css" href="./css/tether.min.css">
+      <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./views/css/bootstrap.min.css">
-    <style>
-        body { padding-top:50px; }
-    </style>
-</head>
-<body>
+  </head>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h1>res.sendFile() Works!</h1>
-        </div>
+  <body ng-app="myApp">
+
+    <!-- Template Landmarks -->
+    <div class="template_landmarks">
+        <template-landmarks title="YouSCADA"> </template-landmarks>
+    </div>
+    <!-- TestData -->
+    <div class="page-wrap">
+      <!-- Dugmici -->
+      <div ng-controller="drugi" class='container glavni'>
+          <opcija list="todo" class="elements"></opcija>
+      </div>
+
+      <div ng-controller="main" class='glavni'>
+          <my-todo list="todo" title="Angular To-do" class="elements"></my-todo>
+      
+      </div>
+
     </div>
 
-    <!-- Vendor: Javascripts -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Telecom 2016</p>
+        </div>
+    </footer>
 
-	<!-- Vendor: Angular, followed by our custom Javascripts -->
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
-
-	<!-- Our Website Javascripts -->
-	<script src="js/main.js"></script>
-    
-</body>
+    <script src="./js/tether.min.js"></script>
+    <script src="./scripts/jquery/jquery.js" ></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./scripts/angular/angular.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
