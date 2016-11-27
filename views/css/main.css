@@ -15,7 +15,8 @@ body {
 .page-wrap {
     min-height   : 80%;
     /*padding-top  : 50px;	 navigation height */
-    margin-bottom:-100px;    /* footer height */
+    margin: 20px;
+    margin-bottom:-900px;    /* footer height */
 }
 .page-wrap:after {
     height:	  60px;
@@ -65,4 +66,22 @@ body {
 }
 .navbar-custom .navbar-brand {
     color:#eeeeee;
+}
+
+ul.list-group{
+    display: block;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.nvb{
+    visibility: hidden;
+}
+.tdl{
+    text-align: left;
+}
+
+.evheading{
+    font-style: italic;
+    font-family: cursive;
 }

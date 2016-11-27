@@ -1,5 +1,8 @@
-	<ul  class="list-inline">
-		<li ng-repeat="todo in list">
+
+	<ul  class="list-group">
+		<li class="list-group-item text-muted col-md-1 nvb"></li>
+		<li class="list-group-item text-muted col-md-3" ng-repeat="todo in list">
 			<a href="" + {{ todo.value }} + ""> {{ todo.name }} </a> 
 		</li>
+		<li class="list-group-item text-muted col-md-1 nvb"></li>
 	</ul>

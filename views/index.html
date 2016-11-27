@@ -3,29 +3,43 @@
   <head>
     
       <title>Naziv</title>
-      <link rel="stylesheet" type="text/css" href="./css/main.css">
+      <!-- <link rel="stylesheet" type="text/css" href="./css/main.css">
       <link rel="stylesheet" type="text/css" href="./css/tether.min.css">
-      <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-
+      <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> -->
+      
   </head>
 
   <body ng-app="myApp">
 
     <!-- Template Landmarks -->
     <div class="template_landmarks">
-        <template-landmarks title="YouSCADA"> </template-landmarks>
+        <template-landmarks title="YOUSCADA"> </template-landmarks>
     </div>
     <!-- TestData -->
     <div class="page-wrap">
       <!-- Dugmici -->
-      <div ng-controller="drugi" class='container glavni'>
-          <opcija list="todo" class="elements"></opcija>
+      <div class="row centered-form center-block">
+
+        <div ng-controller="drugi" class='container col-md-12'>
+            <opcija list="todo"class="opt"></opcija>
+        </div>
+
       </div>
 
-      <div ng-controller="main" class='glavni'>
-          <my-todo list="todo" title="Angular To-do" class="elements"></my-todo>
-      
-      </div>
+        <div ng-controller="main" class='glavni row col-md-12'>
+          <div class="col-md-3"></div>
+            <my-todo list="todo" title="Select Events to listen:" class="elements col-md-5"></my-todo>
+          <div class="col-md-3"></div>
+        </div>
+
+        <div ng-controller="myController" class='row col-md-12'>
+            <div id="container">Placeholder for chart</div>
+        </div>
+
+        <div ng-controller="pieController" class='row col-md-12'>
+              <hc-chart options="chartOptions" class="col-md-5">Placeholder for generic chart</hc-chart><div class="col-md-1"></div>
+              <hc-pie-chart title="Sensor usage" data="pieData" class="col-md-5">Placeholder for pie chart</hc-pie-chart>
+        </div>
 
     </div>
 
@@ -36,10 +50,14 @@
         </div>
     </footer>
 
+
+
     <script src="./js/tether.min.js"></script>
     <script src="./scripts/jquery/jquery.js" ></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./scripts/angular/angular.js"></script>
+    <script src="./scripts/highcharts/highcharts.js"></script>
     <script src="./js/main.js"></script>
+    
   </body>
 </html>
